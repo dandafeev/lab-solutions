@@ -84,7 +84,7 @@ public final class CliRunner {
     }
 
     private void printHelp() {
-        System.out.println("\n📜 Доступные команды:");
+        System.out.println("\nДоступные команды:");
         System.out.println("  sol_create            — Создать раствор");
         System.out.println("  sol_list [--q TEXT]   — Список растворов");
         System.out.println("  sol_show <id>         — Карточка раствора");
