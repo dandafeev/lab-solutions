@@ -23,7 +23,7 @@ public final class CompAddCommand {
         long prepId = input.parseId(args);
         if (prepId <= 0) return;
 
-        System.out.println("--- Добавление компонента к приготовлению #" + prepId + " ---");
+        System.out.println("Добавление компонента к приготовлению #" + prepId );
         long batchId = input.readLong("ID партии (batch_id): ");
         double quantity = input.readDouble("Количество: ");
 
@@ -38,6 +38,6 @@ public final class CompAddCommand {
         PreparationComponent comp = new PreparationComponent(prepId, batchId, quantity, unit);
         String res = service.add(comp);
 
-        System.out.println(res.equals("OK") ? "✅ OK: Компонент добавлен, ID: " + comp.getId() : "❌ Ошибка: " + res);
+        System.out.println(res.equals("OK") ? "OK: Компонент добавлен, ID: " + comp.getId() : "Ошибка: " + res);
     }
 }

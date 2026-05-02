@@ -83,6 +83,6 @@ public final class PrepUpdateCommand {
         if (!hasChanges) { System.out.println("Ошибка: не указаны поля для обновления."); return; }
 
         String res = service.update(id, updated);
-        System.out.println(res.equals("OK") ? "✅ OK: Обновлено" : "❌ Ошибка: " + res);
+        System.out.println(res.equals("OK") ? "OK: Обновлено" : "Ошибка: " + res);
     }
 }

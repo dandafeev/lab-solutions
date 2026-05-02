@@ -38,7 +38,7 @@ public final class PrepListComponentCommand {
         }
 
         List<Preparation> list = service.listBySolutionId(solId);
-        if (list.isEmpty()) { System.out.println("Приготовления не найдены."); return; }
+        if (list.isEmpty()) { System.out.println("Приготовления не найдены"); return; }
 
         if (limit > 0 && list.size() > limit) {
             list = list.subList(list.size() - limit, list.size());

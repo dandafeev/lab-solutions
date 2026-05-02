@@ -17,6 +17,6 @@ public final class PrepDeleteCommand {
         if (id <= 0) return;
 
         String res = service.remove(id);
-        System.out.println(res.equals("OK") ? "✅ OK: Удалено" : "❌ Ошибка: " + res);
+        System.out.println(res.equals("OK") ? "OK: Удалено" : "Ошибка: " + res);
     }
 }
