@@ -1,6 +1,5 @@
 package ru.itmo.labsolutions.domain.enums;
 
-
 public enum SolutionConcentrationUnit {
     PERCENT,
     MOL_PER_L,
